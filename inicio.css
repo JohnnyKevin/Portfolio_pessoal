@@ -25,7 +25,6 @@ body {
             display: flex;
             flex-wrap: nowrap;
             padding: 0;
-            margin: 10px;
         }
 
         .menu ul {
