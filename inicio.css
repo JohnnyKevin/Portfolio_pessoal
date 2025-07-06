@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+body {
+            padding: 0;
+            margin: 0;
+            background-color: rgba(17, 16, 16, 0.887);
+            color: rgba(255, 255, 255, 0.657);
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-areas: 
+            "menu menu"
+            "sobre sobre"
+            "rodape rodape";
+             grid-template-columns: 1fr 1fr;
+             grid-template-rows: auto;
+
+        }
+
+        .menu {
+            grid-area: menu;
+            background-color: rgba(220, 99, 99, 0.438);
+            justify-content: center;
+            display: flex;
+            flex-wrap: nowrap;
+            padding: 0;
+            margin: 10px;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            color: white;
+        }
+
+        li {
+            float: left;
+        }
+
+        a, a:link {
+            font-size: 15px;
+            text-decoration: none;
+            padding: 8px 16px;
+            color: rgb(255, 255, 255);
+        }
+
+        a:hover {
+            background-color: rgba(62, 75, 87, 0.649);
+        }
+
+        .sobre {
+            grid-area: sobre;
+            text-align: center;
+        }
+
+        img {
+            border-radius: 50%;
+        }
+
+        footer {
+            grid-area: rodape;
+            background-color: rgba(220, 99, 99, 0.438);
+            text-align: center;
+            color: white;
+        }

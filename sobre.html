@@ -4,69 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mim</title>
+    <link rel="stylesheet" href="sobre.css">
 </head>
-<style>
-     body {
-            padding: 0;
-            margin: 0;
-            background-color: rgba(17, 16, 16, 0.887);
-            color: rgba(255, 255, 255, 0.657);
-        }
-
-        .wrapper {
-            display: grid;
-            grid-template-areas: 
-            "menu menu"
-            "sobre sobre"
-            "rodape rodape";
-             grid-template-columns: 1fr 1fr;
-             grid-template-rows: auto;
-
-        }
-
-        .menu {
-            grid-area: menu;
-            background-color: rgba(220, 99, 99, 0.438);
-        }
-
-        .menu ul {
-            list-style-type: none;
-            color: white;
-            display: flex;
-            justify-content: center;
-            padding: 0;
-            margin: 10px
-        }
-
-
-        a, a:link {
-            font-size: 15px;
-            text-decoration: none;
-            padding: 8px 16px;
-            color: rgb(255, 255, 255);
-        }
-
-        a:hover {
-            background-color: rgba(62, 75, 87, 0.649);
-        }
-
-        .sobre {
-            grid-area: sobre;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            background-color: rgb(240, 248, 255, 0.283);
-            margin: 10px;
-            border-radius: 20px;
-        }
-
-        footer {
-            grid-area: rodape;
-            background-color: rgba(220, 99, 99, 0.438);
-            text-align: center;
-            color: white;
-        }
-    </style>
 <body>
      <div class="wrapper">
         <nav class="menu">

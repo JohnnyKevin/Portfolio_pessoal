@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+body {
+            padding: 0;
+            margin: 0;
+            background-color: rgba(17, 16, 16, 0.887);
+            color: rgb(255, 255, 255, 0.657);
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-areas: 
+            "menu menu"
+            "section section"
+            "rodape rodape";
+             grid-template-columns: 1fr 1fr;
+             grid-template-rows: auto;
+
+        }
+
+        .menu {
+            grid-area: menu;
+            background-color: rgba(220, 99, 99, 0.438);
+        }
+
+        .menu ul {
+            list-style-type: none;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 10px;
+        }
+
+        a, a:link {
+            font-size: 15px;
+            text-decoration: none;
+            padding: 8px 16px;
+            color: rgb(255, 255, 255);
+        }
+
+        a:hover {
+            background-color: rgba(81, 90, 98, 0.526);
+        }
+
+        section.cursos {
+            grid-area: section;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+
+        section .formação {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            background-color: rgb(240, 248, 255, 0.283);
+            margin: 10px;
+            box-sizing: border-box;
+            border-radius: 20px;
+            width: 30%;
+    
+        }
+
+
+        footer {
+            grid-area: rodape;
+            background-color: rgba(220, 99, 99, 0.438);
+            text-align: center;
+            color: white;
+            font-size: 13px;
+        }
